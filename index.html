@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hamming code</title>
+</head>
+<body>
+
+<input type="text" id="input" value="1100">
+<input type="submit" id="submit">
+<div>Після кодування: <span id="coder"></span></div>
+Вносимо помилку в розряді: 
+<select id="error">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+</select>
+<br />
+<input id="addError" type="submit" value="add error">
+<div>З помилкою: <span id="uncorrect"></span></div>
+<input id="fix" type="submit" value="fix">
+<div>Після декодування: <span id="decoder"></span></div>	
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
